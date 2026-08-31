@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Activity 1: Web Architecture & Semantic HTML5</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    section {
+        margin-bottom: 30px;
+        padding: 25px;
+    }
+
+    #architecture article {
+        border: 1px solid #a8cdb4;
+        border-left: 4px solid #91bda0;
+        border-radius: 4px;
+        padding: 18px;
+        margin: 15px 0;
+        background-color: #edf7ef;
+        box-shadow: none;
+    }
+
+    #multimedia {
+        background-color: white;
+    }
+
+    #form-section form {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+
+        <h1>Web Architecture & Semantic HTML5</h1>
+        
+        <nav>
+            <a href="#architecture"><b>Web Architecture</b></a> |
+            <a href="#multimedia"><b>Multimedia</b></a> |
+            <a href="#form-section">Form Validation</a>
+        </nav>
+
+    </header>
+    <hr>
+
+    <main>
+        <section id="architecture">
+
+            <h2>1. Web Architecture Concepts</h2>
+
+            <article>
+                <h3>Client-Server Model</h3>
+                <p>
+                    The <b>Client</b> sends a request, and the <b>Server</b> returns the web page response.
+                </p>
+            </article>
+
+            <article>
+                <h3>DNS (Domain Name System)</h3>
+                <p>
+                    Translates human-friendly domain names into numeric IP addresses.
+                </p>
+            </article>
+
+            <article>
+                <h3>HTTP vs. HTTPS</h3>
+                <p>
+                    <b>HTTP</b> sends data in plain text, while <b>HTTPs</b> encrypts data securely using SSL/TLS.
+                </p>
+            </article>
+
+        </section>
+        <hr>
+
+        <section id="multimedia">
+            <h2>2. HTML5 Multimedia</h2>
+
+            <h3>Audio Tag:</h3>
+
+            <audio controls>
+                <source
+                    src="https://www.w3schools.com/html/horse.mp3"
+                    type="audio/mpeg">
+            </audio>
+
+            <h3>Video Tag:</h3>
+
+            <video controls width="350">
+                <source
+                    src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    type="video/mp4">
+            </video>
+
+        </section>
+        <hr>
+
+        <section id="form-section">
+            <h2>3. HTML5 Form & Validation</h2>
+
+            <form>
+
+                <label for="fullname">Full Name:</label>
+                <br>
+
+                <input type="text "id="fullname" name="fullname" required>
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <br>
+                
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="protocol">Which protocol uses encryption?</label>
+                <br>
+
+                <select id="protocol" name="protocol" required>
+                    <option value=""> -- Select an Option -- </option>
+                    <br>
+
+                    <option value="HTTP">HTTP</option>
+                    <option value="HTTPS">HTTPS</option>
+                    <option value="DNS">DNS</option>
+
+                </select>
+                <br><br>
+
+                <button type="submit"
+                style="background-color: #78a98a; color: white; border: none; padding: 9px 15px;">
+                    Submit Form
+                </button>
+                <hr>
+</body>
+</html>
